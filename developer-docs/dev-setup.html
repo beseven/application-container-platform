@@ -1,0 +1,536 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1, mkdocs-material-4.6.3">
+    
+    
+      
+        <title>Developer setup guide - Application Container Platform</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.adb8469c.css">
+      
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.86422ebf.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+    
+    
+      
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#developer-setup-guide" tabindex="0" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href=".." title="Application Container Platform" aria-label="Application Container Platform" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              Application Container Platform
+            </span>
+            <span class="md-header-nav__topic">
+              
+                Developer setup guide
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" aria-label="search" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main" role="main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href=".." title="Application Container Platform" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    Application Container Platform
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../index.html" title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../services.html" title="Services" class="md-nav__link">
+      Services
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="https://gitlab.digital.homeoffice.gov.uk/acp-docs/acp-support/tree/master/release-notes/" title="Release Notes" class="md-nav__link">
+      Release Notes
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../how-to-docs/index.html" title="How To's" class="md-nav__link">
+      How To's
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="index.html" title="Developer Getting Started Guide" class="md-nav__link">
+      Developer Getting Started Guide
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../newuser.html" title="New User Guide" class="md-nav__link">
+      New User Guide
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../rbac.html" title="RBAC Guide" class="md-nav__link">
+      RBAC Guide
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../external-addresses.html" title="ACP External IPs" class="md-nav__link">
+      ACP External IPs
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../service-lifecycle.html" title="Service Lifecycle" class="md-nav__link">
+      Service Lifecycle
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#connecting-to-govwifi" class="md-nav__link">
+    Connecting to GovWifi
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#office-365" class="md-nav__link">
+    Office 365
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#connecting-to-acp-vpn" class="md-nav__link">
+    Connecting to ACP VPN
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#platform-hub-registration" class="md-nav__link">
+    Platform Hub registration
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#add-a-ssh-key-to-gitlab" class="md-nav__link">
+    Add a ssh key to Gitlab
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sign-in-to-sysdig" class="md-nav__link">
+    Sign in to Sysdig
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#join-our-slack-instance" class="md-nav__link">
+    Join our Slack instance
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#required-binaries" class="md-nav__link">
+    Required binaries
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#user-agreement" class="md-nav__link">
+    User agreement
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="developer-setup-guide">Developer setup guide<a class="headerlink" href="#developer-setup-guide" title="Permanent link">#</a></h1>
+<h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">#</a></h2>
+<p>This guide aims to prepare developers to use the Application Container Platform. You must complete the steps below before attending the ACP Induction.</p>
+<p>All examples in this document are for Linux distributions and instructions for other operating systems will vary. If you choose to use a Windows device, please ensure that <a href="https://docs.microsoft.com/en-us/windows/wsl/about">Windows Subsystem for Linux</a> is installed.</p>
+<ol>
+<li><a href="#connecting-to-govwifi">Set up GovWifi credentials</a></li>
+<li><a href="#office-365">Office 365</a></li>
+<li><a href="#connecting-to-acp-vpn">Connecting to ACP VPN</a></li>
+<li><a href="#platform-hub-registration">Platform Hub registration</a></li>
+<li><a href="#add-a-ssh-key-to-gitlab">Add a ssh key to Gitlab</a></li>
+<li><a href="#sign-in-to-sysdig">Sign in to Sysdig</a></li>
+<li><a href="#join-our-slack-instance">Join our Slack instance</a></li>
+<li><a href="#required-binaries">Required binaries</a></li>
+<li><a href="#user-agreement">User agreement</a></li>
+</ol>
+<h2 id="connecting-to-govwifi">Connecting to GovWifi<a class="headerlink" href="#connecting-to-govwifi" title="Permanent link">#</a></h2>
+<p>Please refer to <a href="https://www.gov.uk/government/collections/connect-to-govwifi">Connect to GovWifi</a> to obtain your credentials and set up wireless internet access via GovWifi.</p>
+<h2 id="office-365">Office 365<a class="headerlink" href="#office-365" title="Permanent link">#</a></h2>
+<p>Platform users must have Office 365 Single Sign-On (SSO) credentials for the <code>digital.homeoffice.gov.uk</code> domain. Please get in touch with your Programme Management Office to request an account or raise an issue on the <a href="https://support.acp.homeoffice.gov.uk/servicedesk">Support Portal</a>. If you can't access the Board, please ask a colleague to raise a request on your behalf. You will not be able to follow through the rest of this guide unless you have Office 365 credentials.</p>
+<h2 id="connecting-to-acp-vpn">Connecting to ACP VPN<a class="headerlink" href="#connecting-to-acp-vpn" title="Permanent link">#</a></h2>
+<p>Most of ACP's services operate behind a VPN which is accessible with an <code>openvpn</code> client. Instructions on installing <code>openvpn</code> for your OS can be found at <a href="https://openvpn.net/index.php/open-source/downloads.html">OpenVPN</a></p>
+<p>Once you've got your Office 365 SSO credentials, you can now navigate to <a href="https://access-acp.digital.homeoffice.gov.uk">Remote Access</a> and login with your Office 365 account by clicking on the link on the right.</p>
+<p>Please download the VPN profile named <strong>"Kube Platform"</strong> and use the <code>openvpn</code> client to connect. Verify that you can resolve the <a href="https://hub.acp.homeoffice.gov.uk/">Platform Hub</a> before continuing on.</p>
+<p>VPN profiles expire after 72 hours. You'll need to download and connect with a new VPN Profile when it expires.</p>
+<h2 id="platform-hub-registration">Platform Hub registration<a class="headerlink" href="#platform-hub-registration" title="Permanent link">#</a></h2>
+<blockquote>
+<p><strong>Please note</strong> that you need to have your VPN running to access the Platform Hub and also talk to cluster APIs.</p>
+</blockquote>
+<p>You will need to register with the Platform Hub in order to gain access tokens for our Kubernetes clusters.
+Head to <a href="https://hub.acp.homeoffice.gov.uk/">Platform Hub</a>, you will need your O365 credentials to login/sign up. You will be asked to connect your Github account to your Platform Hub account. This will give you access to project repositories under the UKHomeOffice Organisation in GitHub.</p>
+<p>Navigate to the <a href="https://support.acp.homeoffice.gov.uk/servicedesk">Support Portal</a> (JIRA Service Desk), logging in via your O365 account, and create a support request for <a href="https://support.acp.homeoffice.gov.uk/servicedesk/customer/portal/1/create/94">access to ACP Induction</a>. The support request will be sent to and reviewed by a member of the ACP team. Any updates on the request will be available to view within the <a href="https://support.acp.homeoffice.gov.uk/servicedesk">Support Portal</a> and additionally emailed to you.</p>
+<blockquote>
+<p><strong>Please note</strong> that if you have an AD-only email account (a digital account without a mailbox), then you can raise a support request to <a href="https://support.acp.homeoffice.gov.uk/servicedesk/customer/portal/1/create/98">update your email address</a> so that you can receive email notifications on ticket updates.</p>
+</blockquote>
+<p>If you find that you cannot raise support requests, this may be because you have not been added to a team yet. Please ask one of your team members who already has access to the support portal to <a href="https://support.acp.homeoffice.gov.uk/servicedesk/customer/portal/1/create/100">raise a request to have you added to service desk</a>.</p>
+<p>Once created, your token will be shown in the <a href="https://hub.acp.homeoffice.gov.uk/">Platform Hub</a> under the <code>Kubernetes</code> section of the <a href="https://hub.acp.homeoffice.gov.uk/identities">Connected Identities</a> tab on the sidebar. You can view all of your tokens by pressing the <code>Show Tokens</code> button.</p>
+<h2 id="add-a-ssh-key-to-gitlab">Add a ssh key to Gitlab<a class="headerlink" href="#add-a-ssh-key-to-gitlab" title="Permanent link">#</a></h2>
+<p>You will need to add a ssh public key to your Gitlab profile before attending the Induction. Please sign into <a href="https://gitlab.digital.homeoffice.gov.uk">Gitlab</a> with Office 365 and add a ssh public key to your profile. Instructions for generating a ssh keypair can be found in the <a href="https://docs.gitlab.com/ee/ssh/">Gitlab Docs</a>.</p>
+<h2 id="sign-in-to-sysdig">Sign in to Sysdig<a class="headerlink" href="#sign-in-to-sysdig" title="Permanent link">#</a></h2>
+<p>Platform users with a digital account can sign into our <a href="https://sysdig.digital.homeoffice.gov.uk/">Sysdig instance</a>. Just click the <code>OpenID</code> button and then the <code>O365</code> button.</p>
+<p>Initially you will be added to a default team that does not have access to any data, however you will be added to the ACP Induction team on (or shortly before) the day.</p>
+<h2 id="join-our-slack-instance">Join our Slack instance<a class="headerlink" href="#join-our-slack-instance" title="Permanent link">#</a></h2>
+<p>Platform users can join <a href="https://hod-dsp.slack.com/">our Slack instance</a> using a Home Office email address. If you do not already have an account on our instance, you can <a href="https://hod-dsp.slack.com/signup/">create an account here</a>.</p>
+<blockquote>
+<p><strong>Please note</strong> that the sign up process involves clicking a link that will be emailed to you, so if you only have an AD-only digital account (i.e. if your digital email does not have a mailbox), you will need to <a href="https://support.acp.homeoffice.gov.uk/servicedesk/customer/portal/1/create/118">raise a request</a> to have your corporate email invited to Slack.</p>
+</blockquote>
+<p>Once you have an account on Slack, please join the <code>#acp-support</code> and <code>#acp-induction</code> channels. Other useful channels include <code>#acp-service-alerts</code> for the current status of ACP services (which can also be found on our <a href="https://status.acp.homeoffice.gov.uk/">status page</a>) and <code>#acp-feedback</code> where you can provide feedback regarding our platform.</p>
+<h2 id="required-binaries">Required binaries<a class="headerlink" href="#required-binaries" title="Permanent link">#</a></h2>
+<p>Before joining the ACP Induction, we kindly ask you to install binaries which are used for the deployment of applications in ACP - instructions on how to install these are shown below:</p>
+<ul>
+<li><a href="#install-git">Git</a></li>
+<li><a href="#install-docker">Docker</a></li>
+<li><a href="#install-drone">Drone</a></li>
+<li><a href="#install-kubectl">Kubectl</a></li>
+<li><a href="#install-aws-cli">AWS CLI</a></li>
+</ul>
+<h4>Install Git</h4>
+<p>Verify if you have Git installed by:</p>
+<pre><code class="bash">$ git --version
+git version 2.16.2
+</code></pre>
+
+<p>If Git is not installed, instructions on how to download and install it can be found over at the <a href="https://git-scm.com/">Git website</a>.</p>
+<blockquote>
+<p><strong>Please note</strong> that we assume a basic knowledge of Git for the ACP Induction. If you've not used git before, or need to brush up on your skills please see <a href="https://git-scm.com/book/en/v2/Getting-Started-Git-Basics">Git basics</a>.</p>
+</blockquote>
+<h4>Install Docker</h4>
+<p>You can follow the instructions to install <code>docker</code> from the <a href="https://docs.docker.com/engine/installation/">Docker website</a>. You can verify the installation is successful with:</p>
+<pre><code class="bash">$ docker --version
+Docker version 18.03.1-ce, build 9ee9f40
+
+# version 17.06 or above is required
+</code></pre>
+
+<h4>Install Drone</h4>
+<p>Drone CLI can be downloaded from the <a href="http://docs.drone.io/cli-installation/">Drone CI website</a>. Instructions installing on multiple operating systems are shown on the webpage. Currently our Drone server instance is compatible with version <code>0.8.6</code>, which can be found <a href="https://github.com/drone/drone-cli/releases/tag/v0.8.6">here</a> or <a href="https://0-8-0.docs.drone.io/cli-installation/">here</a>.</p>
+<p>Verify that the installation is successful:</p>
+<pre><code class="bash">$ drone --version
+drone version 0.8.6
+</code></pre>
+
+<blockquote>
+<p><strong>Please note</strong> that Drone CLI version <code>1.0</code> and above are not fully compatible with our version of the Drone server. Please install <code>v0.8.6</code>.</p>
+</blockquote>
+<h4>Install Kubectl</h4>
+<p>You can follow the instructions to install version <code>v1.13.4</code> of <code>kubectl</code> from the <a href="https://kubernetes.io/docs/tasks/tools/install-kubectl/">Kubernetes website</a>. You can verify the installation is successful with:</p>
+<pre><code class="bash">$ kubectl version
+Client Version: version.Info{Major:&quot;1&quot;, Minor:&quot;13&quot;, GitVersion:&quot;v1.13.4&quot;, GitCommit:&quot;c27b913fddd1a6c480c229191a087698aa92f0b1&quot;, GitTreeState:&quot;clean&quot;, BuildDate:&quot;2019-02-28T13:37:52Z&quot;, GoVersion:&quot;go1.11.5&quot;, Compiler:&quot;gc&quot;, Platform:&quot;linux/amd64&quot;}
+</code></pre>
+
+<h4>Install AWS CLI</h4>
+<p>Follow the <a href="https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-install.html">official AWS documentation</a> for instructions to install the AWS CLI. You can verify the installation is successful with:</p>
+<pre><code class="bash">$ aws --version
+aws-cli/1.16.28 Python/2.7.10 Darwin/18.2.0 botocore/1.12.18
+
+# version 1.11.91 or above is required
+</code></pre>
+
+<h4>Connecting to the cluster</h4>
+<p>In order to access a namespace you will need to configure <code>kubectl</code> to connect to our clusters - instructions on setting it up can be found on the <code>Set up Kube Config</code> button on the <a href="https://hub.acp.homeoffice.gov.uk/identities">Connected Identities</a> page.</p>
+<p>Verify that your <code>kubectl</code> is configured properly by trying to list pods and secrets in the <code>acp-induction</code> namespace:</p>
+<pre><code class="bash">$ kubectl --context=acp-notprod_acp-induction --namespace=acp-induction get pods
+No resources found.
+$ kubectl --context=acp-notprod_acp-induction --namespace=acp-induction get secrets
+NAME                  TYPE                                  DATA      AGE
+default-token-dcnmg   kubernetes.io/service-account-token   3         105d
+</code></pre>
+
+<blockquote>
+<p>The output of the command above may differ if there are other pods or extra secrets deployed to the namespace.</p>
+</blockquote>
+<h2 id="user-agreement">User agreement<a class="headerlink" href="#user-agreement" title="Permanent link">#</a></h2>
+<p>Finally, please head over and read through our <a href="https://gitlab.digital.homeoffice.gov.uk/acp-docs/acp-support">support documentation</a> to familiarise yourself with the level of service ACP provides to its users including the level and hours of support on offer and issue escalation procedures.</p>
+                
+                  
+                
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org" target="_blank" rel="noopener">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.c33a9706.js"></script>
+      
+      <script>app.initialize({version:"1.1",url:{base:".."}})</script>
+      
+    
+  </body>
+</html>

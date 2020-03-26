@@ -1,0 +1,513 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1, mkdocs-material-4.6.3">
+    
+    
+      
+        <title>Service Lifecycle - Application Container Platform</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/application.adb8469c.css">
+      
+      
+    
+    
+      <script src="assets/javascripts/modernizr.86422ebf.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="assets/fonts/material-icons.css">
+    
+    
+    
+      
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#service-lifecycle" tabindex="0" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="." title="Application Container Platform" aria-label="Application Container Platform" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              Application Container Platform
+            </span>
+            <span class="md-header-nav__topic">
+              
+                Service Lifecycle
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" aria-label="search" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main" role="main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="." title="Application Container Platform" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    Application Container Platform
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="index.html" title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="services.html" title="Services" class="md-nav__link">
+      Services
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="https://gitlab.digital.homeoffice.gov.uk/acp-docs/acp-support/tree/master/release-notes/" title="Release Notes" class="md-nav__link">
+      Release Notes
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="how-to-docs/index.html" title="How To's" class="md-nav__link">
+      How To's
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="developer-docs/index.html" title="Developer Getting Started Guide" class="md-nav__link">
+      Developer Getting Started Guide
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="newuser.html" title="New User Guide" class="md-nav__link">
+      New User Guide
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="rbac.html" title="RBAC Guide" class="md-nav__link">
+      RBAC Guide
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="external-addresses.html" title="ACP External IPs" class="md-nav__link">
+      ACP External IPs
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Service Lifecycle
+      </label>
+    
+    <a href="service-lifecycle.html" title="Service Lifecycle" class="md-nav__link md-nav__link--active">
+      Service Lifecycle
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#alpha" class="md-nav__link">
+    Alpha
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#beta" class="md-nav__link">
+    Beta
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#live" class="md-nav__link">
+    Live
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#production-ready-criteria" class="md-nav__link">
+    Production-Ready Criteria
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#alpha" class="md-nav__link">
+    Alpha
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#beta" class="md-nav__link">
+    Beta
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#live" class="md-nav__link">
+    Live
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#production-ready-criteria" class="md-nav__link">
+    Production-Ready Criteria
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="service-lifecycle">Service Lifecycle<a class="headerlink" href="#service-lifecycle" title="Permanent link">#</a></h1>
+<p>This defines the current service lifecycle stages. This isn't specific to the hosting platform
+and will no doubt move to somewhere more organistionally wide. However, this is a starting
+point to clearly communicate the phases of our evolution.</p>
+<h2 id="alpha">Alpha<a class="headerlink" href="#alpha" title="Permanent link">#</a></h2>
+<p>Alpha is an experimental phase to test the hypothesis, by building prototypes to validate
+the direction and the intention of the service. It is there to explore ways of achieving and meeting
+the user needs in the right way.</p>
+<p>There is more information on this <a href="https://www.dta.gov.au/standard/service-design-and-delivery-process/">here</a> and
+<a href="http://ausdto.github.io/service-handbook/alpha/1-introduction/1-1-what.html">here</a></p>
+<h2 id="beta">Beta<a class="headerlink" href="#beta" title="Permanent link">#</a></h2>
+<p>This is the phase where software is more feature complete. It is aimed at being functional and meeting the definition
+of a Minimal Viable Product, (MVP). The service is accessible and secured and meets a lot of the production requirements and needs.
+However, there will be an assessment of the service through closed user groups, to evaluate that it meets the user needs.
+SLA's, SLO's and availability may not meet the user expectation of a live service.</p>
+<h2 id="live">Live<a class="headerlink" href="#live" title="Permanent link">#</a></h2>
+<p>Once the products have gone through the beta process, (which is to identify that the MVP is viable), the service will transition to live.
+In live, we are happy that the service has undergone enough evaluation to meet user expectations as well as being able to commit confidentially to SLA's and SLO's.  </p>
+<h2 id="production-ready-criteria">Production-Ready Criteria<a class="headerlink" href="#production-ready-criteria" title="Permanent link">#</a></h2>
+<p>To define what it means to be "production-ready", there is a set of criteria by which we assess services. This is not a concrete
+list and is likely to evolve. We would expect Beta and Live services to adhere to this criteria list, however, it is possible that a beta may decide that
+some are not necessary, depending on the size of the user group and the communication to said group.</p>
+<p>Generally speaking, it is best not to rely or depend on a Beta service.</p>
+<ul>
+<li>Resilient (Recover from Restart)</li>
+<li>Highly available (Multiple Instances)</li>
+<li>Backups of all data</li>
+<li>Validation of backup, (not 0 file size)</li>
+<li>Restores of data tested</li>
+<li>CI Release process</li>
+<li>Continuous deployment (if needed) to prod, (done via CI)</li>
+<li>Is it independent of itself i.e. it doesn't rely on itself</li>
+<li>Tests defined and ran as part of CI process</li>
+<li>Monitoring of product</li>
+<li>Does it have an ATO?</li>
+<li>Monitoring Dashboards produced</li>
+<li>Alerting in place and tested</li>
+<li>Patching Process Defined + Tested</li>
+<li>Intrusion detection in place</li>
+<li>Security tested</li>
+<li>Does it log adequately?</li>
+<li>Logs persisted</li>
+<li>Non root user if docker is used</li>
+<li>Readonly root filesystem and hardening of container</li>
+<li>Documentation in place and standards</li>
+<li>Default Admin Password Changed</li>
+<li>Dev instance / playground</li>
+<li>SSO where needed</li>
+<li>Change Management process defined</li>
+<li>Incident Management process defined (incl agreed SLAs)</li>
+<li>Monitoring of cert expiry</li>
+</ul>
+                
+                  
+                
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="external-addresses.html" title="ACP External IPs" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                ACP External IPs
+              </span>
+            </div>
+          </a>
+        
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org" target="_blank" rel="noopener">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="assets/javascripts/application.c33a9706.js"></script>
+      
+      <script>app.initialize({version:"1.1",url:{base:"."}})</script>
+      
+    
+  </body>
+</html>

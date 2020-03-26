@@ -1,0 +1,573 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1, mkdocs-material-4.6.3">
+    
+    
+      
+        <title>Developer Getting Started Guide - Application Container Platform</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.adb8469c.css">
+      
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.86422ebf.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+    
+    
+      
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#acp-developer-documentation" tabindex="0" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href=".." title="Application Container Platform" aria-label="Application Container Platform" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              Application Container Platform
+            </span>
+            <span class="md-header-nav__topic">
+              
+                Developer Getting Started Guide
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" aria-label="search" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main" role="main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href=".." title="Application Container Platform" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    Application Container Platform
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../index.html" title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../services.html" title="Services" class="md-nav__link">
+      Services
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="https://gitlab.digital.homeoffice.gov.uk/acp-docs/acp-support/tree/master/release-notes/" title="Release Notes" class="md-nav__link">
+      Release Notes
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../how-to-docs/index.html" title="How To's" class="md-nav__link">
+      How To's
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Developer Getting Started Guide
+      </label>
+    
+    <a href="index.html" title="Developer Getting Started Guide" class="md-nav__link md-nav__link--active">
+      Developer Getting Started Guide
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#developer-getting-started-guide" class="md-nav__link">
+    Developer getting started guide
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#platform-hub" class="md-nav__link">
+    Platform Hub
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#support-portal" class="md-nav__link">
+    Support Portal
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#project-getting-started-guide" class="md-nav__link">
+    Project getting started guide
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#acp-how-to-docs" class="md-nav__link">
+    ACP How-to Docs
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#developer-guide-to-continuous-integration-with-drone" class="md-nav__link">
+    Developer guide to Continuous Integration with Drone
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#writing-dockerfiles" class="md-nav__link">
+    Writing Dockerfiles
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../newuser.html" title="New User Guide" class="md-nav__link">
+      New User Guide
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../rbac.html" title="RBAC Guide" class="md-nav__link">
+      RBAC Guide
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../external-addresses.html" title="ACP External IPs" class="md-nav__link">
+      ACP External IPs
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../service-lifecycle.html" title="Service Lifecycle" class="md-nav__link">
+      Service Lifecycle
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#developer-getting-started-guide" class="md-nav__link">
+    Developer getting started guide
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#platform-hub" class="md-nav__link">
+    Platform Hub
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#support-portal" class="md-nav__link">
+    Support Portal
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#project-getting-started-guide" class="md-nav__link">
+    Project getting started guide
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#acp-how-to-docs" class="md-nav__link">
+    ACP How-to Docs
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#developer-guide-to-continuous-integration-with-drone" class="md-nav__link">
+    Developer guide to Continuous Integration with Drone
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#writing-dockerfiles" class="md-nav__link">
+    Writing Dockerfiles
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="acp-developer-documentation">ACP Developer Documentation<a class="headerlink" href="#acp-developer-documentation" title="Permanent link">#</a></h1>
+<h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">#</a></h2>
+<p>ACP serves as a platform for teams to build and deploy projects in the Home Office. In addition to other technologies that we use, we strongly recommend to get an understanding of two of the core technologies that ACP is based on - Docker and Kubernetes:   </p>
+<ul>
+<li><a href="https://www.docker.com">Docker</a> is a software tool designed to make it easier to create, deploy and run applications by packaging up along with all its dependencies to containers.</li>
+<li><a href="https://kubernetes.io">Kubernetes</a> is an open-source platform for automating deployment, scaling,
+and operations of application containers across clusters of hosts, providing container-centric infrastructure.</li>
+</ul>
+<p>For further information on Docker and Kubernetes:   </p>
+<ul>
+<li>Docker</li>
+<li><a href="https://docs.docker.com/engine/getstarted/">Docker getting started tutorial</a>  </li>
+<li>Kubernetes</li>
+<li><a href="http://kubernetes.io/docs/whatisk8s/">What is Kubernetes?</a>  </li>
+<li><a href="https://www.youtube.com/watch?v=5gz8kOUstFc">Kubernetes talk to introduce the concepts</a></li>
+</ul>
+<h2 id="developer-getting-started-guide">Developer getting started guide<a class="headerlink" href="#developer-getting-started-guide" title="Permanent link">#</a></h2>
+<p>Some prerequisites are required before developing on ACP. <a href="dev-setup.html">This guide</a> will show you how to:</p>
+<ul>
+<li>Get access to the VPNs that allows you to connect to the platform</li>
+<li>Get setup with the kubectl client that lets you deploy applications to kubernetes</li>
+<li>Get access to Quay and Artifactory</li>
+</ul>
+<p>In addition, new developers should look at the <a href="../newuser.html">new user flow</a> documentation whilst going through this doc to serve as a checklist and make sure you are onboarded to all necessary platform services.</p>
+<h2 id="platform-hub">Platform Hub<a class="headerlink" href="#platform-hub" title="Permanent link">#</a></h2>
+<p><a href="https://hub.acp.homeoffice.gov.uk">The Platform Hub</a> serves as a central portal for users of ACP. It acts as an all-in-one place to find information, requests and also support for the platform. The hub also provides tools to develop, build, deploy and manage all your projects.</p>
+<p>Updates are also on its way to include more self-service tools, along with documentation, FAQs and live status updates.</p>
+<blockquote>
+<p>Access to the Platform Hub requires the <code>Kube Platform</code> VPN profile. Please make sure you have followed the <a href="dev-setup.html">Developer getting started guide</a> for instructions on connecting to VPNs.</p>
+</blockquote>
+<h2 id="support-portal">Support Portal<a class="headerlink" href="#support-portal" title="Permanent link">#</a></h2>
+<p>All support requests, changes, incidents and announcements for ACP are managed via <a href="https://support.acp.homeoffice.gov.uk/servicedesk">JIRA Service Desk</a>. A set of request templates have been created to cover a wide majority of general requests that users normally need. If your issue / request type is not listed, there is a <a href="https://support.acp.homeoffice.gov.uk/servicedesk/customer/portal/1/create/89">general request</a> form available.</p>
+<h2 id="project-getting-started-guide">Project getting started guide<a class="headerlink" href="#project-getting-started-guide" title="Permanent link">#</a></h2>
+<p>Kubernetes resources (including your applications!) are always deployed into a particular namespace.
+These namespaces provide separation between the different projects hosted on the platform.
+A project service can have more than one namespace. For example, you can have namespaces that are different environments but are part of the same project service (e.g. dev and prod namespaces). Or if you have different namespaces that are all related to one project service (e.g. a web-api and an application namespace). For instructions on getting new namespaces and other relevant resources on getting started can be found below: <a href="#ACP-How-to-Docs">ACP How-to Docs</a></p>
+<h2 id="acp-how-to-docs">ACP How-to Docs<a class="headerlink" href="#acp-how-to-docs" title="Permanent link">#</a></h2>
+<p>The How To Docs within the ACP repo provides a collection of how-to guides for both Developers and DevOps to use <a href="../how-to-docs/index.html">this</a></p>
+<h2 id="developer-guide-to-continuous-integration-with-drone">Developer guide to Continuous Integration with Drone<a class="headerlink" href="#developer-guide-to-continuous-integration-with-drone" title="Permanent link">#</a></h2>
+<p>Drone is what we use for Continuous Integration in ACP. <a href="../how-to-docs/drone-how-to.html">This guide</a> will cover how to use drone to test your PRs, build and push docker images, and to deploy.</p>
+<h2 id="writing-dockerfiles">Writing Dockerfiles<a class="headerlink" href="#writing-dockerfiles" title="Permanent link">#</a></h2>
+<p><a href="../how-to-docs/write-dockerfiles.html">This guide</a> covers best practice for building Dockerfiles, and lists our standard base images.</p>
+                
+                  
+                
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../how-to-docs/index.html" title="How To's" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                How To's
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../newuser.html" title="New User Guide" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                New User Guide
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org" target="_blank" rel="noopener">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.c33a9706.js"></script>
+      
+      <script>app.initialize({version:"1.1",url:{base:".."}})</script>
+      
+    
+  </body>
+</html>
